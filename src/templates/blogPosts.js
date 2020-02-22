@@ -9,9 +9,7 @@ const BlogPosts = ({ data }) => {
       <h1>{title}</h1>
       <h4>{date}</h4>
       <p>Tags: {tag}</p>
-      <div
-        dangerouslySetInnerHTML={{ __html }}
-      />
+      <div dangerouslySetInnerHTML={{ __html }} />
       <p>written by {author}</p>
     </Layout>
   );
@@ -21,7 +19,6 @@ const BlogPosts = ({ data }) => {
 export const POST_BY_PATH = graphql`
   query POST_BY_PATH($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
-      id
       html
       frontmatter {
         path
