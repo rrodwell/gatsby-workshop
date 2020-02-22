@@ -17,6 +17,7 @@ const IndexPage = ({ data }) => {
   )
 }
 
+
 //* Queries that are not being exported will not be ran a build time
 //* Gatsby finds all queries that being exported, fetches the data, and renders the pages a build
 //* Defining queries in a component like this will be passed as a data prop to the component
