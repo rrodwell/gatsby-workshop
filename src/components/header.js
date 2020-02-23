@@ -27,7 +27,7 @@ const Header = ({ siteTitle, siteDescription, siteAuthor }) => (
           {siteTitle}
         </Link>
       </h1>
-      <p>{description}</p>
+      <p>{siteDescription}</p>
       <small>{siteAuthor}</small>
     </div>
   </header>
